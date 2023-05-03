@@ -1,8 +1,5 @@
-#!name = Google搜索重定向
-#!desc = 将Google搜索重定向至.com域名，如遇频繁跳转请禁用本插件。
-#!openUrl = 
-#!author = 可莉🅥
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!name = Google
+#!desc = 将搜索重定向！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Google.png
 
 [Rewrite]
