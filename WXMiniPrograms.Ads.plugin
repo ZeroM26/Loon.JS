@@ -1,8 +1,5 @@
-#!name = 微信小程序去广告
-#!desc = 收录常用小程序的去广告，作者署名在插件内。
-#!open= 
-#!author = 可莉🅥
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!name = 微小程序
+#!desc = 过滤应用广告！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/WeixinMiniPrograms.png
 
 [Rewrite]
