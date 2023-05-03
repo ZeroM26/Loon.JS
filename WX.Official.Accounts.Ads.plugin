@@ -1,8 +1,5 @@
-#!name = 微信公众号去广告
-#!desc = 过滤微信公众号广告
-#!openUrl = 
-#!author = 可莉🅥
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!name = 微信公号
+#!desc = 过滤应用广告！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Weixin.png
 
 [Script]
