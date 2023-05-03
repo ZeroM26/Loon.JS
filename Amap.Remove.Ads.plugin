@@ -1,9 +1,7 @@
-#!name = 高德地图去广告
-#!desc = 过滤高德地图广告
-#!open= 
-#!author = RuCu6 kokoryh ddgksf2013
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!name = 高德地图
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Amap.png
+
+# 2023-04-30 11:20
 
 [Rewrite]
 # 导航详情页 - 路线规划、地点详情页、搜索详情页
@@ -21,6 +19,7 @@
 ^https:\/\/m5-zb\.amap\.com\/ws\/boss\/order(_web\/friendly_information|\/car\/king_toolbox_car_bubble)\? reject-dict
 
 # 其他
+^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$ AMapiPhone reject-dict
 ^https:\/\/m5\.amap\.com\/ws\/asa\/ads_attribution\? reject-dict
 ^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? reject-dict
 
