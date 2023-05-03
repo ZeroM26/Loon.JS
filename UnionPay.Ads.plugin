@@ -1,8 +1,5 @@
-#!name = 云闪付去广告
-#!desc = 过滤银联云闪付广告
-#!openUrl = 
-#!author = 可莉🅥
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!name = 银联闪付
+#!desc = 过滤应用广告！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/UnionPay.png
 
 [Rule]
