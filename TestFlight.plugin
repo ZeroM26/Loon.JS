@@ -1,8 +1,5 @@
-#!name = TestFlight解锁
-#!desc = 解除TestFlight的区域限制
-#!openUrl = 
-#!author = NobyDa
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!name = TestFlight
+#!desc = 解除区域限制！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/TestFlight.png
 
 [Rule]
