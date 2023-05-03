@@ -1,8 +1,5 @@
-#!name = Bing AI
-#!desc = 将Safari浏览器伪装为Edge浏览器，以便绕过BingAI的使用限制。
-#!openUrl = 
-#!author = LiuYaChen 可莉🅥
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!name = 必应智能
+#!desc = 绕过使用限制！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Bing.png
 
 [Rule]
