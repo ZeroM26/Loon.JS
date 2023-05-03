@@ -1,8 +1,5 @@
-#!name = 知乎去广告
-#!desc = 去除各部广告，建议卸载知乎重新安装。
-#!openUrl = 
-#!author = RuCu6 blackmatrix7
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!name = 知乎应用
+#!desc = 过滤应用广告！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Zhihu.png
 
 [Rule]
