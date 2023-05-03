@@ -1,8 +1,6 @@
-#!name=网易蜗牛读书
-#!desc=网易蜗牛读书解锁会员
+#!name=蜗牛读书
+#!desc=解锁应用程序！
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/wnds.png
-#!homepage=https://ybnet.ga
-#!author=yxiaocai & JO2EY
 
 
 [MITM]
