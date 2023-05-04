@@ -1,0 +1,9 @@
+#!name = MdsQ
+#!desc = 解锁应用程序！
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/Other_icon/80px/BoxJS.png
+
+[Script]
+http-request ^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 script-path = https://raw.githubusercontent.com/yqc007/QuantumultX/master/mdsqallcrack.js
+
+[MITM]
+hostname = ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com
