@@ -2,7 +2,7 @@
 #!desc = 过滤应用广告！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Amap.png
 
-# 2023-04-30 11:20
+# 2023-05-05 11:20
 
 [Rewrite]
 # 导航详情页 - 路线规划、地点详情页、搜索详情页
@@ -20,7 +20,6 @@
 ^https:\/\/m5-zb\.amap\.com\/ws\/boss\/order(_web\/friendly_information|\/car\/king_toolbox_car_bubble)\? reject-dict
 
 # 其他
-^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$ AMapiPhone reject-dict
 ^https:\/\/m5\.amap\.com\/ws\/asa\/ads_attribution\? reject-dict
 ^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? reject-dict
 
@@ -30,7 +29,7 @@ http-response ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$ script-path 
 
 # 导航详情页 - 路线规划、地点详情页、搜索详情页
 http-response ^https:\/\/m5\.amap\.com\/ws\/shield\/search\/(common\/coupon\/info|poi\/detail)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body = true, tag = 移除导航详情页扰人组件
-http-response ^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(city_feed|search\/sp|tips_operation_location)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body = true, tag = 移除导航详情页扰人组件
+http-response ^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(city_feed|mps|search\/sp|tips_operation_location)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body = true, tag = 移除导航详情页扰人组件
 http-response ^https:\/\/m5\.amap\.com\/ws\/shield\/search(_poi)?\/sug\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body = true, tag = 移除导航详情页扰人组件
 
 # 首页 - 推广卡片、红点角标、右上角动图、搜索框热词、左下角天气、消息横幅
