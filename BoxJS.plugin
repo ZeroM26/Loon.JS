@@ -8,6 +8,10 @@ force-http-engine-hosts = boxjs.com:80, boxjs.net:80
 
 [Rule]
 DOMAIN, cdn.jsdelivr.net, PROXY
+# DOMAIN, dompling.github.io, PROXY
+
+# [Rewrite]
+# ^https?:\/\/(.+\.)?boxjs\.(com|net) 302 https://dompling.github.io/boxjs.react
 
 [Script]
 http-request ^https?:\/\/(.+\.)?boxjs\.(com|net) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/BoxJS/BoxJS.js, requires-body= true, tag=BoxJS, timeout=120
