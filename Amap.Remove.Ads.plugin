@@ -2,7 +2,7 @@
 #!desc = 过滤应用广告！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Amap.png
 
-# 2023-05-05 11:20
+# 2023-05-27 11:20
 
 [Rule]
 DOMAIN, amap-aos-info-nogw.amap.com, REJECT
