@@ -1,8 +1,6 @@
 #!name = 网易音乐
 #!desc = 过滤应用广告！
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/NeteaseCloudMusic.png
-
-2023-05-27
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/NeteaseCloudMusic.png
 
 [General]
 force-http-engine-hosts = 59.111.*:0
