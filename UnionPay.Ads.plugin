@@ -1,6 +1,6 @@
 #!name = 银联闪付
 #!desc = 过滤应用广告！
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/UnionPay.png
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/UnionPay.png
 
 [Rule]
 DOMAIN, ads.95516.com, REJECT
