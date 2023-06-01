@@ -1,6 +1,6 @@
 #!name = 知乎应用
 #!desc = 过滤应用广告！
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Zhihu.png
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Zhihu.png
 
 [Rule]
 DOMAIN, appcloud.zhihu.com, REJECT
