@@ -1,8 +1,6 @@
 #!name = 喜马拉雅
 #!desc = 过滤应用广告！
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Himalaya.png
-
-2023-05-27
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Himalaya.png
 
 [Rewrite]
 # 喜马拉雅_修复轮播广告失效Bug
