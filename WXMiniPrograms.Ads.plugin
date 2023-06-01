@@ -1,6 +1,6 @@
 #!name = 微小程序
 #!desc = 过滤应用广告！
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/WeixinMiniPrograms.png
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/WeixinMiniPrograms.png
 
 [Rewrite]
 #必胜客 @是豆豆呀 res.pizzahut.com.cn
