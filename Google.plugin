@@ -1,6 +1,6 @@
 #!name = Google
 #!desc = 将搜索重定向！
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Google.png
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Google.png
 
 [Rewrite]
 ^https?:\/\/(www.)?(g|google)\.(cn|com\.hk) 302 https://www.google.com
