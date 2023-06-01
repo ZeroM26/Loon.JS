@@ -1,6 +1,6 @@
 #!name = 必应智能
 #!desc = 绕过使用限制！
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Bing.png
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Bing.png
 
 [Rule]
 DOMAIN-SUFFIX, bing.com, PROXY
