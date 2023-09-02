@@ -1,16 +1,18 @@
 #!name = 微小程序
 #!desc = 过滤应用广告！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/WeixinMiniPrograms.png
+#!date = 2023-09-01 23:38:56
+
 
 [Rewrite]
 #必胜客 @是豆豆呀 res.pizzahut.com.cn
 ^https:\/\/res\.pizzahut\.com\.cn\/CRM reject-dict
 
 #肯德基 @是豆豆呀 orders.kfc.com.cn, dynamicad.kfc.com.cn, res.kfc.com.cn
-^https:\/\/orders\.kfc\.com\.cn\/preorder-portal\/api\/v2\/coupon reject-dict
-^https:\/\/dynamicad\.kfc\.com\.cn\/api reject-dict
-^https:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/custom_v2\/wxapp reject-dict
-^https:\/\/orders\.kfc\.com\.cn\/preorder-portal\/api\/v2\/activity reject-dict
+#^https:\/\/orders\.kfc\.com\.cn\/preorder-portal\/api\/v2\/coupon reject-dict
+#^https:\/\/dynamicad\.kfc\.com\.cn\/api reject-dict
+#^https:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/custom_v2\/wxapp reject-dict
+#^https:\/\/orders\.kfc\.com\.cn\/preorder-portal\/api\/v2\/activity reject-dict
 
 #麦当劳 @是豆豆呀 api.mcd.cn
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/hotActivity reject-dict
