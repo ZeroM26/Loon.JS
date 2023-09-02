@@ -1,14 +1,16 @@
 #!name = BoxJS
 #!desc = 数据管理脚本！
 #!openUrl = http://boxjs.com
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/Other_icon/80px/BoxJS.png
+#!author = chavyleung
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/Other_icon/120px/BoxJS.png
+#!date = 2023-09-02 00:46:59
 
-[General]
-force-http-engine-hosts = boxjs.com:80, boxjs.net:80
+
+# [General]
+# force-http-engine-hosts = boxjs.com:80, boxjs.net:80
 
 [Rule]
-DOMAIN, cdn.jsdelivr.net, PROXY
-# DOMAIN, dompling.github.io, PROXY
+DOMAIN-SUFFIX, jsdelivr.net, PROXY
 
 # [Rewrite]
 # ^https?:\/\/(.+\.)?boxjs\.(com|net) 302 https://dompling.github.io/boxjs.react
