@@ -1,12 +1,16 @@
 #!name = TestFlight
 #!desc = 解除区域限制！
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/TestFlight.png
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/TestFlight.png
+#!date = 2023-09-06 01:30:10
+
+[General]
+skip-proxy = iosapps.itunes.apple.com
 
 [Rule]
 DOMAIN, testflight.apple.com, PROXY
 
 [Script]
-http-request ^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$ requires-body=true,script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/TestFlight/TF_Download.js, tag=TestFlight解锁
+http-request ^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/TestFlight/TF_Download.js, requires-body = true, tag = TestFlight解锁
 
-[MITM]
+[Mitm]
 hostname = testflight.apple.com
