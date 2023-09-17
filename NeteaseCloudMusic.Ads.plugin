@@ -1,9 +1,7 @@
 #!name = 网易音乐
 #!desc = 过滤应用广告！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/NeteaseCloudMusic.png
-
-#[General]
-#force-http-engine-hosts = 59.111.*:0
+#!date = 2023-09-08 13:55:55
 
 [Rule]
 DOMAIN, gdt.qq.com, REJECT
@@ -50,5 +48,5 @@ DOMAIN-SUFFIX, 163jiasu.com, REJECT
 ^https:\/\/interface\.music\.163\.com\/weapi\/middle\/clientcfg\/config\/list\? reject-dict
 ^https:\/\/interface3?\.music\.163\.com\/w?eapi\/resource-exposure\/(activity\/config\/get|config)\? reject-dict
 
-[MITM]
+[Mitm]
 hostname = interface.music.163.com, interface3.music.163.com
