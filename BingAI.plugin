@@ -1,6 +1,7 @@
 #!name = 必应智能
 #!desc = 绕过使用限制！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Bing.png
+#!date = 2023-09-08 13:50:55
 
 [Rule]
 DOMAIN-SUFFIX, bing.com, PROXY
@@ -19,5 +20,5 @@ DOMAIN-SUFFIX, bingworld.com, PROXY
 [Script]
 http-request ^https:\/\/www\.bing\.com\/(search|new) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bing/BingAI.js, requires-body = false, tag = Bing AI
 
-[MITM]
+[Mitm]
 hostname = www.bing.com
