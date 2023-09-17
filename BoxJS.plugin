@@ -4,7 +4,6 @@
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/Other_icon/120px/BoxJS.png
 #!date = 2023-09-02 00:46:59
 
-
 # [General]
 # force-http-engine-hosts = boxjs.com:80, boxjs.net:80
 
@@ -15,7 +14,7 @@ DOMAIN-SUFFIX, jsdelivr.net, PROXY
 # ^https?:\/\/(.+\.)?boxjs\.(com|net) 302 https://dompling.github.io/boxjs.react
 
 [Script]
-http-request ^https?:\/\/(.+\.)?boxjs\.(com|net) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/BoxJS/BoxJS.js, requires-body= true, tag=BoxJS, timeout=120
+http-request ^https?:\/\/(.+\.)?boxjs\.(com|net) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/BoxJS/BoxJS.js, requires-body =  true, tag = BoxJS, timeout = 120
 
-[MITM]
+[Mitm]
 hostname = boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net
