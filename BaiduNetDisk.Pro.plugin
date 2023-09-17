@@ -1,11 +1,10 @@
 #!name = 百度网盘
 #!desc = 解锁应用程序！
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/BaiduNetDisk.png
-
-# 解锁百度网盘高速加载、倍速播放、高清画质、智能字幕、完整文稿、SVIP10皮肤以及点亮SVIP10标识等内容。
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/BaiduNetDisk.png
+#!date = 2023-09-08 13:50:55
 
 [Script]
 http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/BaiduNetDisk/BaiduNetDisk_crack.js, requires-body = true, tag = 解锁SVIP权益
 
-[MITM]
+[Mitm]
 hostname = pan.baidu.com
