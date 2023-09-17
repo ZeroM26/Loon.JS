@@ -1,10 +1,12 @@
 #!name = 百度地图
 #!desc = 过滤应用广告！
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/BaiduNetDisk.png
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/BaiduNetDisk.png
+#!date = 2023-09-08 13:50:55
+
 
 [Rewrite]
-# 百度网盘
 ^https?:\/\/pan\.baidu\.com\/(act\/(api\/activityentry|v2\/(bchannel|welfare)\/list)|rest\/2\.0\/pcs\/ad) reject
+
 
 # 地图组件包
 ^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?container=du_aide_module reject-dict
