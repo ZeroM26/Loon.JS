@@ -1,6 +1,7 @@
 #!name = 百度贴吧
 #!desc = 过滤应用广告！
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Tieba.png
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Tieba.png
+#!date = 2023-09-08 13:55:55
 
 [Rule]
 DOMAIN,180.76.76.200,REJECT
@@ -8,7 +9,7 @@ IP-CIDR,180.76.76.200/32,REJECT,no-resolve
 
 [Script]
 http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Tieba/tieba-json.js, requires-body = true, timeout = 10, tag = 贴吧json
-http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Tieba/tieba-proto.js, requires-body=true, binary-body-mode = true, timeout = 10, tag = 贴吧proto
+http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Tieba/tieba-proto.js, requires-body = true, binary-body-mode = true, timeout = 10, tag = 贴吧proto
 
-[MITM]
+[Mitm]
 hostname = tiebac.baidu.com
