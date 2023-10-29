@@ -1,18 +1,10 @@
 #!name = 银联闪付
 #!desc = 过滤应用广告！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/UnionPay.png
-#!date = 2023-08-08 18:50:50
+#!date = 2023-10-29 18:50:50
 
 [Rule]
+# 开屏广告
 DOMAIN, ads.95516.com, REJECT
-DOMAIN, cm-10-138.getui.com, REJECT
-DOMAIN, sdk.open.talk.getui.net, REJECT
-DOMAIN, sdk-conf.getui.com, REJECT
 DOMAIN, switch.cup.com.cn, REJECT
 DOMAIN, tysdk.95516.com, REJECT
-
-[Rewrite]
-^https:\/\/wallet\.95516\.com(:10533)?\/s\/wl\/icon\/large\/1 reject
-
-[Mitm]
-hostname = wallet.95516.com
