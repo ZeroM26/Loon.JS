@@ -1,10 +1,12 @@
 #!name = Google
 #!desc = 将搜索重定向！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Google.png
-#!date = 2023-09-08 13:50:55
+#!date = 2023-11-14 13:50:55
 
 [Rewrite]
-^https?:\/\/(www.)?(g|google)\.(cn|com\.hk) 302 https://www.google.com
+# ^https?:\/\/(www.)?(g|google)\.(cn|com\.hk) 302 https://www.google.com
+^https?:\/\/(www.)?(g|google)\.cn 302 https://www.google.com
+^https?:\/\/(ditu|maps).google\.cn 302 https://maps.google.com
 
 [Mitm]
-hostname = *.google.cn, *.google.com.hk
+hostname = www.google.cn
