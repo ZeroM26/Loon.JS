@@ -1,7 +1,7 @@
 #!name = 高德地图
 #!desc = 过滤应用广告！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Amap.png
-#!date = 2023-09-15 11:20:57
+#!date = 2023-11-15 11:20:57
 
 [Rule]
 DOMAIN, amap-aos-info-nogw.amap.com, REJECT
@@ -28,11 +28,12 @@ DOMAIN, free-aos-cdn-image.amap.com, REJECT
 
 [Script]
 # 移除阿里巴巴通用广告请求
-http-response ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Alibaba/Alibaba_amdc_reject.js, tag = 移除阿里巴巴通用广告请求
+http-response ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Alibaba/Alibaba_amdc_reject.js, tag = 移除阿里巴巴通用广告请求
 
 # 导航详情页 - 路线规划、地点详情页、搜索详情页、导航结束页
 http-response ^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/routePlan\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body = true, tag = 移除导航详情页扰人组件
 http-response ^https:\/\/m5\.amap\.com\/ws\/shield\/search\/(common\/coupon\/info|poi\/detail)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body = true, tag = 移除导航详情页扰人组件
+http-response ^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body = true, tag = 移除导航详情页扰人组件
 http-response ^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(homepage|mps|search\/sp|sug|tips_operation_location)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body = true, tag = 移除导航详情页扰人组件
 
 # 首页 - 推广卡片、红点角标、右上角动图、搜索框热词、左下角天气、消息横幅
