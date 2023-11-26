@@ -1,18 +1,19 @@
 #!name = 知乎应用
 #!desc = 过滤应用广告！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Zhihu.png
-#!date = 2023-08-29 11:25:03
+#!date = 2023-11-22 11:25:05
 
 [Rule]
+# 知乎
 DOMAIN, appcloud.zhihu.com, REJECT
 DOMAIN, appcloud2.in.zhihu.com, REJECT
 DOMAIN, crash2.zhihu.com, REJECT
 DOMAIN, mqtt.zhihu.com, REJECT
 DOMAIN, sugar.zhihu.com, REJECT
 DOMAIN, zxid-m.mobileservice.cn, REJECT
-IP-CIDR, 103.41.167.237/32, REJECT, no-resolve
-IP-CIDR, 118.89.204.198/32, REJECT, no-resolve
-IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT, no-resolve
+IP-CIDR, 103.41.167.237/32, REJECT
+IP-CIDR, 118.89.204.198/32, REJECT
+IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT
 
 [Rewrite]
 # 首页 - 悬浮图标、顶部横幅、开屏广告、关注页推荐、推荐信息流、热榜信息流、热榜直播、回答底部卡片
@@ -51,7 +52,8 @@ IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT, no-resolve
 [Script]
 # 首页 - 悬浮图标、顶部横幅、开屏广告、关注页推荐、推荐信息流、热榜信息流、热榜直播、回答底部卡片
 http-response ^https:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除首页推广
-http-response ^https:\/\/api\.zhihu\.com\/(moments_v3|topstory\/recommend) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除首页推广
+http-response ^https:\/\/api\.zhihu\.com\/feed\/render\/tab\/config\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除首页推广
+http-response ^https:\/\/api\.zhihu\.com\/(moments_v3|topstory\/hot-lists\/total|topstory\/recommend) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除首页推广
 http-response ^https:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除首页推广
 
 # 搜索页 - 关键词、猜你想搜
@@ -67,4 +69,4 @@ http-response ^https:\/\/appcloud2\.zhihu\.com\/v3\/config script-path = https:/
 http-response ^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 拦截服务器推送配置
 
 [Mitm]
-hostname = api.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com, www.zhihu.com, zhuanlan.zhihu.com, link.zhihu.com
+hostname = *.zhihu.com
