@@ -1,7 +1,9 @@
 #!name = RedPaper
 #!desc = 过滤应用广告！
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/RedPaper.png
-#!date = 2023-09-06 17:15:05
+#!date = 2023-11-20 17:15:05
+
+# RuCu6
 
 [Rewrite]
 # 惊喜弹窗
@@ -26,11 +28,11 @@ http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system_service\/
 http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除开屏广告
 
 # 信息流
-http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/followfeed\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/CommonScript/replace-body.js, requires-body = true, tag = 移除信息流广告
-http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v6\/homefeed\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/CommonScript/replace-body.js, requires-body = true, tag = 移除信息流广告
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/followfeed\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除信息流广告
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v6\/homefeed\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除信息流广告
 
 # 移除图片和视频水印
-http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(v2\/note\/feed|v3\/note\/videofeed)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/CommonScript/replace-body.js, requires-body = true, tag = 移除图片和视频水印
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(v2\/note\/feed|v3\/note\/videofeed)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除图片和视频水印
 
 [Mitm]
 hostname = edith.xiaohongshu.com, www.xiaohongshu.com
