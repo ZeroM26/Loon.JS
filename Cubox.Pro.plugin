@@ -4,7 +4,7 @@
 #!date = 2023-09-08 13:50:55
 
 [Script]
-http-response ^https?:\/\/cubox\.pro\/c\/api\/userInfo script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Cubox/Cubox_crack.js, requires-body = true, tag = Cubox解锁
+http-response ^https?:\/\/cubox\.pro\/c\/api\/userInfo script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Cubox/Cubox_crack.js, requires-body = true, tag = Cubox解锁
 
 [Mitm]
 hostname = cubox.pro
