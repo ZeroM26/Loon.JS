@@ -5,6 +5,6 @@
 
 [MITM]
 hostname=p.du.163.com
-[Script]
 
+[Script]
 http-response ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json requires-body=1 ,script-path=https://raw.githubusercontent.com/deezertidal/private/main/wnds.js
