@@ -1,9 +1,9 @@
 #!name = 淘宝购物
 #!desc = 过滤开屏广告!
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Taobao.png
-#!date = 2023-11-10 12:52:30
-
-# RuCu6
+// #!author = RuCu6
+// #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Taobao.png
+#!date = 2023-11-10 05:00:00
 
 [Rule]
 DOMAIN, adashx.m.taobao.com, REJECT
