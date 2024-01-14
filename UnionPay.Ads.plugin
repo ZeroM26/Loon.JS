@@ -1,6 +1,6 @@
 #!name = 银联闪付
 #!desc = 过滤应用广告！
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/UnionPay.png
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/UnionPay.png
 #!date = 2023-10-29 18:50:50
 
 [Rule]
