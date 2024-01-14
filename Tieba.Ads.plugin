@@ -1,7 +1,9 @@
 #!name = 百度贴吧
 #!desc = 过滤应用广告！
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Tieba.png 
-#!date = 2023-09-24 13:55:55
+// #!author = app2smile
+// #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Tieba.png
+#!date = 2023-12-30 05:00:00
 
 [Rule]
 DOMAIN,180.76.76.200,REJECT
