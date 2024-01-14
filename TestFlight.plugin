@@ -1,6 +1,6 @@
 #!name = TestFlight
 #!desc = 解除区域限制！
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/TestFlight.png
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/TestFlight.png
 #!date = 2023-09-06 01:30:10
 
 [General]
