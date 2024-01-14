@@ -1,7 +1,9 @@
 #!name = 芒果 TV
 #!desc = 过滤芒果客户端广告!
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Mango_TV.png
-#!date = 2023-10-01 21:35:21
+// #!author = RuCu6
+// #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Mango_TV.png
+#!date = 2023-12-06 05:00:00
 
 [Rule]
 DOMAIN, credits.bz.mgtv.com, REJECT
