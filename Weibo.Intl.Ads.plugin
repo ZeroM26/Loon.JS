@@ -1,7 +1,9 @@
 #!name = 微博轻享版
 #!desc = 过滤轻享国际版广告!
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Weibo_intl.png
-#!date = 2023-09-07 23:18:15
+// #!author = Keywos kokoryh
+// #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Weibo_intl.png
+#!date = 2023-09-07 05:00:00
 
 [Rewrite]
 # 热门视频、热推荐
