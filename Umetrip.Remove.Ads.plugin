@@ -1,6 +1,6 @@
 #!name = 航旅纵横
 #!desc = 过滤航旅纵横广告!
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Umetrip.png
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Umetrip.png
 #!date = 2023-10-27 11:25:30
 
 [Rule]
